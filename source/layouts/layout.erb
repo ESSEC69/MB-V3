@@ -1,6 +1,14 @@
+
 <!doctype html>
 <html>
   <head>
+
+    
+
+                                   
+
+
+
     <meta charset="utf-8">
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
@@ -25,48 +33,150 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <%= favicon_tag './source/images/favicon.ico' %>
     <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
-          <% end %>
+          <!-- Responsive réduction d'écran -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          <!-- Logo NavBar -->
+            <% link_to "/index.html", class: "navbar-brand" do %>
+              <%= image_tag 'logo.png' %> 
+            <% end %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "/index.html#solution" do %>
+                 Solution Bois
               <% end %>
             </li>
-            <li>
-              <% link_to "/contact.html" do %>
-                <i class="fa fa-envelope-o"></i> Contact
-              <% end %>
-            </li>
+
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Follow-us <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Logistique <span class="caret"></span></a>
+
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://www.facebook.com/lewagonformation"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li><a href="https://twitter.com/lewagonparis"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li>  
+                  <% link_to "/logistique.html" do %>
+                  Palette
+                  <% end %>
+                </li>
+                <li>  
+                  <% link_to "/logistique.html#caisse" do %>
+                  Caisses & Pallocks
+                  <% end %>
+                </li>
+                <li>
+                  <% link_to "/logistique.html#produit" do %>
+                  Nos produits
+                  <% end %>
+                </li>
               </ul>
             </li>
-            <li><a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn">Order now</a></li>
+
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Construction <span class="caret"></span></a>
+
+              <ul class="dropdown-menu" role="menu">
+                <li>  
+                  <% link_to "/construction.html" do %>
+                  Construction bois
+                  <% end %>
+                </li>
+                <li>  
+                  <% link_to "/construction.html#gallery" do %>
+                  Nos constructions
+                  <% end %>
+                </li>
+                
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+            <li>
+              <% link_to "/materiaux.html" do %>
+                 Matériaux
+              <% end %>
+            </li>
+            
+            <li>
+              <% link_to "/services.html" do %>
+               Services
+              <% end %>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope-o"></i> Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <% link_to "/contact.html" do %>
+                  Nous trouver
+                  <% end %>
+                </li>
+                <li>
+                  <% link_to "/contact.html#contacter" do %>
+                  Nous contacter
+                  <% end %>
+                </li>
+                
+              </ul>
+            </li>
+            <li><a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn">Je commande</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
+    
+    <div class="liseret"> </div>
+   
     </nav>
 
     <%= yield %>
+    
+    <div id="footer">
+      <div class="container-fluid"> 
+      
+        <div class="row">
+          <div class="col-md-10">
+            <p>Copyright 2015 : www.mbao-lapalettesénégalaise.com</p>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-inline">
+              <li><a href="https://twitter.com/Mbao_Bois"><i class="fa fa-twitter-square fa-2x "></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x "></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-square fa-2x "></i></a></li>
+              <li><a href="https://instagram.com/mbaobois/"><i class="fa fa-instagram fa-2x "></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+                <!-- Google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37297284-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
   </body>
 </html>
