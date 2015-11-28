@@ -2,14 +2,16 @@
     
     text-align: center;
     color: black;
-    
-    
-   
+    background-attachment: scroll;
+    background-image: url(MB-V3/images/banner2.jpg);
+    background-position: center center;
+    background-repeat:repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     height:100%;
 
-
-    background: url(/images/banner2.jpg) no-repeat center center fixed; 
-    background-size: cover;
 
 }
 
