@@ -179,7 +179,15 @@
                 
               </ul>
             </li>
-            <li><a href="/EN/index-en.html" class="btn">English</a></li>
+
+            <li>
+              <div class="flag">
+              <% link_to "/EN/index-en.html", class: "" do %>
+              <%= image_tag 'english.jpg' %> 
+              <% end %>
+              </div>
+            </li>
+
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

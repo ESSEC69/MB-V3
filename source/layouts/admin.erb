@@ -141,13 +141,18 @@
                 
               </ul>
             </li>
+
             <li>
-              <div class="btn-primary">
-                
-                <% link_to "/index.html" do %>
-                  FRENCH
-                  <% end %>   
+              <div class="flag">
+              <% link_to "/index.html", class: "" do %>
+              <%= image_tag 'france.jpg' %> 
+              <% end %>
+              </div>
+
+
+
             </li>
+          
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
