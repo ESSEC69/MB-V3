@@ -1,5 +1,5 @@
 ---
-title: Contact @ MBAO-BOIS
+title: BSG - Contact
 ---
 
 
@@ -22,30 +22,36 @@ title: Contact @ MBAO-BOIS
 
 
     <div class="row">
-    	<div class="col-md-6">
+    	<div class="col-md-8">
     		<div class="row">
     			<div class="col-md-2">
-    				
     			</div>
-    			<div class="col-md-2">
+    			<div class="col-md-1">
     				<i class="fa fa-map-marker fa-5x"></i>
     			</div>
-    			<div class="col-md-8">
-					<p>Route de Rufisque </p>
-					<p>En face du lotissement aux Baobabs</p>
-					<h4>MBAO - Senegal</h4>
-				</div>
-			</div>
+    			<div class="col-md-3">
+          <p><strong>Scierie</strong></p>
+					<p>Lieu Dit Boulanger CACAO</p>
+					<p>97311 Roura</p>
+					<p>GUYANE FRANCAISE</p>
+				  </div>
+          <div class="col-md-3">
+          <p><strong>Bureau</strong></p>
+          <p>Lieu Dit Boulanger CACAO</p>
+          <p>97311 Roura</p>
+          <p>GUYANE FRANCAISE</p>
+          </div>
+			  </div>
   		</div>
-  		<div class="col-md-6">
+  		<div class="col-md-4">
   			<div class="row">
     			
-    			<div class="col-md-4">
+    			<div class="col-md-1">
     				
     			</div>
     			<div class="col-md-4">
-					<p>Téléphone</p>	
-					<h4>08 35 65 65 65</h4>
+					<p><strong>Téléphone</strong></p>	
+					<p>08 35 65 65 65</p>
 				</div>
 
 				<div class="col-md-2">
@@ -70,11 +76,13 @@ title: Contact @ MBAO-BOIS
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
 <script type="text/javascript">
-var myLatlng = new google.maps.LatLng(14.737474, -17.308989);
+var myLatlng = new google.maps.LatLng(4.564118, -52.414752);
+var myLatlng2 = new google.maps.LatLng(4.825122, -52.339452);
+var myLatlng3 = new google.maps.LatLng(4.725122, -52.389452);
 
 var myOptions = {
-  zoom: 12,
-  center: myLatlng,
+  zoom: 10,
+  center: myLatlng3,
   scrollwheel: false,
   mapTypeId: google.maps.MapTypeId.ROADMAP,
   styles: [] // TODO: replace [] by array from https://snazzymaps.com/
@@ -84,7 +92,12 @@ var map = new google.maps.Map(document.getElementById('map'), myOptions);
 var marker = new google.maps.Marker({
   position: myLatlng,
   map: map,
-  title: "MBAO-BOIS"
+  title: "Scierie de CACAO : BSG"
+});
+var marker = new google.maps.Marker({
+  position: myLatlng2,
+  map: map,
+  title: "Bureau de Matoury"
 });
 </script>
 </div>
@@ -94,7 +107,7 @@ var marker = new google.maps.Marker({
 	</div>
 </div>
 
-<div class="full-fenetre" id="contacter">
+<div class="full-fenetre bck-white" id="contacter">
 	<div class="container-fluid">
 		<div class="row">
        	  <div class="col-md-1">
