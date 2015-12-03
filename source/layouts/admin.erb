@@ -50,11 +50,7 @@
                 <span class="icon-bar"></span>
               </button>
           <!-- Logo NavBar -->
-<<<<<<< Updated upstream
-            <% link_to "/EN/BSG.html", class: "navbar-brand" do %>
-=======
-            <% link_to "/EN/index-en.html", class: "navbar-brand" do %>
->>>>>>> Stashed changes
+            <% link_to "/index.html", class: "navbar-brand" do %>
               <%= image_tag 'logo-navbar.png' %> 
             <% end %>
         </div>
@@ -145,7 +141,12 @@
                 
               </ul>
             </li>
-            <li><a href="/index.html"  class="btn">French</a></li>
+            <li>
+              <div class="btn-primary">
+                FRENCH
+                <% link_to "/index.html" do %>
+              </div>   
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
