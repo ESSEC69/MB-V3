@@ -113,3 +113,22 @@ html,body {
     margin : 15% auto;
     
 }
+
+
+#banner3{
+    
+    text-align: center;
+    color: black;
+    background-attachment: scroll;
+    background-image: url("../images/ponton.png");
+    background-position: center center;
+    background-repeat:repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height:100%;
+    padding-bottom : 30px;
+    margin-bottom : 0px;
+
+}
