@@ -93,7 +93,7 @@ activate :deploy do |deploy|
   deploy.method = :ftp
   # host, user, passwword and path *must* be set
   deploy.host = "ftp.cluster005.ovh.net"
-  deploy.path = "www"
+  deploy.path = ""
   deploy.user = "boisetscfg"
   deploy.password = "Facebook69"
 end
