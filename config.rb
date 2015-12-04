@@ -77,26 +77,26 @@ configure :build do
 end
 
 # Deployment
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true
+#activate :deploy do |deploy|
+  #deploy.method = :git
+  #deploy.build_before = true
 
     # Optional Settings
     # deploy.remote = 'custom-remote' # remote name or git url, default: origin
     # deploy.branch = 'custom-branch' # default: gh-pages
     # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
     # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-end
-
-# To deploy the build directory to a remote host via ftp:
-#activate :deploy do |deploy|
-  #deploy.method = :ftp
-  # host, user, passwword and path *must* be set
-  #deploy.host = "ftp.cluster005.ovh.net"
-  #deploy.path = "www"
-  #deploy.user = "boisetscfg"
-  #deploy.password = "Facebook69"
 #end
+
+#To deploy the build directory to a remote host via ftp:
+activate :deploy do |deploy|
+  deploy.method = :ftp
+  # host, user, passwword and path *must* be set
+  deploy.host = "ftp.cluster005.ovh.net"
+  deploy.path = "www"
+  deploy.user = "boisetscfg"
+  deploy.password = "Facebook69"
+end
 
 
 
