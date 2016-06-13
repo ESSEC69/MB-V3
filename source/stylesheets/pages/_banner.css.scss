@@ -1,0 +1,62 @@
+#banner{
+    
+    text-align: center;
+    color: black;
+    background-attachment: scroll;
+    background-image: url("../images/banner2.jpg");
+    background-position: center center;
+    background-repeat:repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height:100%;
+    padding-bottom : 36px;
+
+
+}
+
+
+
+#white-banner{
+    background-color: rgba(15, 15, 15, 0.5);
+    color:white ;
+    border:2px solid white;
+    margin:15% auto;
+    
+    
+    padding:1px;
+    
+    
+
+
+}
+
+#title{
+background-color: rgba(15, 15, 15, 0.5);
+ color:white ;
+ border : 2px solid white;
+
+ padding : 2px;
+ 
+ margin : 2px auto;
+ margin-top : 15px;
+ 
+
+
+}
+
+#title-menu{
+  background-color : rgba(54, 55, 148, 1);
+  color : rgba(242, 206, 6, 1);
+  border-radius : 4px;
+  margin : 1px auto;
+  height : 35px;
+  
+}
+
+#title-menu:hover{
+  background-color : rgba(54, 55, 180, 1);  
+  box-shadow:2px 2px 4px rgb(200,200,200);
+}
+
